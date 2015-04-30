@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap Carousel Template</title>
+        <script src="pace.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="bootstrap.css" type="text/css" rel="stylesheet"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML 5 elements & media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!-- [if lt IE 9]>
@@ -71,7 +73,7 @@
                       <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+             <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
 
                       <div class="item active">
@@ -116,7 +118,30 @@
                 </div>
                
             </div>
-     <!-- </div> ? -->
+    <!-- </div> ? -->
+        <div class="container">
+            <ul id="scene"
+              data-calibrate-x="false"
+              data-calibrate-y="true"
+              data-invert-x="false"
+              data-invert-y="true"
+              data-limit-x="false"
+              data-limit-y="10"
+              data-scalar-x="2"
+              data-scalar-y="8"
+              data-friction-x="0.2"
+              data-friction-y="0.8"
+              data-origin-x="0.0"
+              data-origin-y="1.0">
+              <li class="layer" data-depth="0.00"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+              <li class="layer" data-depth="0.20"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+              <li class="layer" data-depth="0.40"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+              <li class="layer" data-depth="0.60"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+              <li class="layer" data-depth="0.80"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+              <li class="layer" data-depth="1.00"><img class="img-circle" src="http://placehold.it/50x50" width="50" height="50"></li>
+            </ul>
+        </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -145,6 +170,33 @@
                 </div>
             </div>
         </div>
+        
+    <!-- form -->
+        <div class="container">
+            <form role="form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="un">Username:</label>
+                    <input type="username" class="form-control" id="un" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" minlength="8" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> I agree</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+
         
         <div class="container">
             <img src="images/gif.gif" alt="divider" height="1">
@@ -192,5 +244,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery.parallax.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.validate.js"></script>
+        <script>
+        $("form").validate();
+        </script>    
     </body>
 </html>
