@@ -38,3 +38,8 @@
 
   pointer-events: none;
 }
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
